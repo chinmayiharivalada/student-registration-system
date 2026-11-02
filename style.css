@@ -1,0 +1,173 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #F5F0FA;
+    padding: 40px 15px;
+    color: #393344;
+}
+
+.container {
+    max-width: 650px;
+    margin: auto;
+    background: #FFFFFF;
+    padding: 38px;
+    border-radius: 20px;
+    box-shadow: 0 10px 35px rgba(115, 89, 140, 0.12);
+}
+
+h1 {
+    text-align: center;
+    color: #735B91;
+    margin-bottom: 10px;
+    font-size: 30px;
+}
+
+.subtitle {
+    text-align: center;
+    color: #96899F;
+    margin-bottom: 30px;
+    font-size: 14px;
+}
+
+h2 {
+    color: #9B7EBD;
+    margin: 28px 0 16px;
+    border-bottom: 1px solid #EADFF2;
+    padding-bottom: 10px;
+    font-size: 19px;
+}
+
+label {
+    display: block;
+    margin: 17px 0 8px;
+    font-weight: 600;
+    color: #51465D;
+    font-size: 14px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 13px 14px;
+    border: 1px solid #E5DCEB;
+    border-radius: 10px;
+    font-size: 14px;
+    color: #393344;
+    background: #FEFCFF;
+    transition: 0.3s;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #A88BC6;
+    box-shadow: 0 0 0 3px rgba(155, 126, 189, 0.12);
+}
+
+textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    margin-top: 28px;
+    background: #9B7EBD;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #80639F;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(155, 126, 189, 0.2);
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 24px 18px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
+
+
+/* Registration Success Page */
+
+.result-card {
+    max-width: 700px;
+}
+
+.success-icon {
+    width: 65px;
+    height: 65px;
+    background: #E8F5E9;
+    color: #4CAF50;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0 auto 20px;
+}
+
+.result-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 14px 10px;
+    border-bottom: 1px solid #EADFF2;
+}
+
+.result-label {
+    color: #80639F;
+    font-weight: 600;
+}
+
+.result-value {
+    color: #393344;
+    text-align: right;
+    overflow-wrap: anywhere;
+}
+
+.back-btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: #9B7EBD;
+    color: white;
+    padding: 14px;
+    margin-top: 28px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.back-btn:hover {
+    background: #80639F;
+}
+
+@media (max-width: 500px) {
+    .result-row {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .result-value {
+        text-align: left;
+    }
+}
